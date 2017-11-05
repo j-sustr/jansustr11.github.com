@@ -1,12 +1,10 @@
 
 const nazvyVysledku = [
-    'vysledky-testu-komprimace',
-    'vysledky-testu-komprimaci-1',
-    'vysledky-testu-komprimaci-2',
-    'vysledky-testu-komprimaci-3',
+    'test-komprimace-napeti',
+    'test-komprimace-proudu',
 ];
 
-const urlVysledky = 'https://jansustr11.github.io/';
+const urlVysledky = 'https://jansustr11.github.io/projekt-komprimace/';
 
 const TYP_SLOUPCE = {
     PRVEK: 'Prvek',
