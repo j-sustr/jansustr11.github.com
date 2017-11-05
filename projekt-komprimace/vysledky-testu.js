@@ -32,7 +32,7 @@ const barvy = [
 
 const vysledkyTestuEl = document.getElementById('vysledky-testu');
 
-
+nactiVysledkyTestu(nazvyVysledku[0]);
 
 (function nastavVysledkySelect() {
     const vysledkySelect = document.getElementById('vyber-vysledku-select');
@@ -59,13 +59,6 @@ function nactiVysledkyTestu(nazev) {
     });
 
 }
-
-
-getJSON('https://jansustr11.github.io/vysledky-testu-komprimace.json', function (status, data) {
-
-    // zobrazTabulku(data);
-    zobrazVysledkyTestu(data, vysledkyTestuEl);
-});
 
 function zobrazVysledkyTestu(vysledky, el) {
     const nazevVT = el.getElementsByClassName('nazev')[0];
