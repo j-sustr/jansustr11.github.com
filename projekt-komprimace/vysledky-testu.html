@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" type="text/css" href="styl.css"> -->
+    <title>Výsledky testu</title>
+</head>
+
+<style>
+    /* #vysledky-testu .tabulka tr>*:nth-child(3),
+    #vysledky-testu .tabulka tr>*:nth-child(4) {
+        display: none;
+    }  */
+
+    html {
+        /* font-size: 20px; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
+
+    body {}
+
+    h1,
+    h2 {
+        font-weight: lighter;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    table {
+        font-size: 1.2rem;
+    }
+
+    table.tabulka {
+        width: 100%;
+        table-layout: fixed;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    table.tabulka td {
+        padding: 0;
+    }
+
+    table.tabulka tr td>div {
+        margin: 50px auto 50px auto;
+        background-color: rgb(240, 240, 240);
+        overflow: auto;
+    }
+
+    table.tabulka tr td>div * {
+        /* display: inline-block; */
+        margin: auto;
+    }
+
+    table.tabulka h1 {
+        margin: 100px 0 0 100px;
+        font-size: 2rem;
+    }
+
+    #vysledky-testu>header {
+        /* background-color: #ffffff;
+        color: #000; */
+        padding: 100px;
+    }
+
+    #vysledky-testu header h1 span {
+        font-size: 1.4rem;
+        font-weight: normal;
+        display: block;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    #vysledky-testu header>h2 {
+        margin-top: 100px;
+    }
+
+    #vysledky-testu header p {
+        font-size: 1.4rem;
+        padding-left: 30px;
+    }
+
+    table.parametry {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    table.parametry td {
+        padding: 1rem 2rem;
+        font-size: 1.4rem
+    }
+
+    #vyber-vysledku {
+        /* margin: 100px 10% 100px 10%;
+        float: right; */
+        font-size: 2rem;
+        font-weight: lighter;
+        background-color: rgb(126, 126, 126);
+        color: #fff;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        position: fixed;
+        z-index: 10;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    #vyber-vysledku select {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        font-weight: lighter;
+    }
+
+    div.popis-container {
+        /* border: 1px solid black; */
+        border-width: 2px;
+        border-color: rgb(201, 201, 201);
+        border-style: dotted;
+        margin: 100px 0;
+        padding: 50px;
+        width: fit-content;
+    }
+    body > footer {
+        height: 400px;
+        color: rgb(182, 112, 0);
+    }
+</style>
+
+<body>
+    <div id="vysledky-testu">
+        <div id="vyber-vysledku">
+            <label>Výběr výsledků
+                <select id='vyber-vysledku-select'>
+                    <option value="hide">-- soubor --</option>
+                </select>
+            </label>
+        </div>
+        <header>
+            <h1>
+                <div class="nazev"></div>
+                <span>Výsledky testu</span>
+            </h1>
+
+            <div class="popis-container">
+                <h2>Popis</h2>
+                <p class="popis"></p>
+            </div>
+
+            <!-- <h2>Parametry</h2>
+            <table class="parametry"></table> -->
+        </header>
+        <!-- <hr> -->
+
+        <table class="tabulka"></table>
+
+     
+    </div>
+    <footer></footer>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="vysledky-testu.js"></script>
+</body>
+
+</html>
