@@ -1,6 +1,6 @@
 ﻿{
   "nazev": "Test komprimace vyexportovaných hodnot proudů",
-  "popis": "Vstupní soubor: ExportovanyProud_17-9-25-SMC235\\UNI\\1\\0\\2017-09-23-22-00-00-042.arch<br>Velikost vstupního souboru: 8987 kB<br><br>Každý algoritmus je otestován 10 pokusy.<br>Při každém pokusu jsou komprimována rozdílná data o velikosti 898664 B, <br>která vznikla rovnoměrným rozdělením vstupního souboru.<br><br>Vysvětlivky ke grafům:<br>SIOC ... namespace .NET System.IO.Compression<br>DNZ  ... knihovna DotNetZip<br>SZL  ... knihovna SharpZipLib<br>SZS  ... knihovna SevenZipSharp<br>",
+  "popis": "Vstupní soubor: ExportovanyProud_17-9-25-SMC235\\UNI\\1\\0\\2017-09-23-22-00-00-042.arch<br>Velikost vstupního souboru: 8987 kB<br><br>Všechny algoritmy mají nastavenou maximální úroveň komprimace<br><br>Každý algoritmus je otestován 10 pokusy.<br>Při každém pokusu jsou komprimována rozdílná data o velikosti 898664 B, <br>která vznikla rovnoměrným rozdělením vstupního souboru.<br><br>Vysvětlivky ke grafům:<br>SIOC ... namespace .NET System.IO.Compression<br>DNZ  ... knihovna DotNetZip<br>SZL  ... knihovna SharpZipLib<br>SZS  ... knihovna SevenZipSharp<br>",
   "parametry": null,
   "tabulka": {
     "slovnik": null,
