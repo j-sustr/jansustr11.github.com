@@ -251,9 +251,9 @@ function zobrazBoxPlot(kolekce, titulek, plotId, plotDiv) {
 
     const layout = {
         // title: titulek,
-        autosize: true,
+        //autosize: true,
         // width: traces.length * 100,
-        //height: 700,
+        height: 700,
 
         font: {
             size: 14,
