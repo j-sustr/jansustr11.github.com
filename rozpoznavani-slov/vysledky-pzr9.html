@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <style>
+      body {
+        background-color: #1b1818; 
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+      .obsah {
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="obsah">
+      <pre class="script-preview">
+      
+
+///////[ 8.4.2018 ]//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////     
+
+       HTK 20 osob
+      ~~~~~~~~~~~~~~~
+       ASR, %Correct           FBANK16     FBANK32     MFCC39
+       SPEAKER-DEPENDENT        98.50       96.50       99.00
+       MULTI-SPEAKER            75.00       83.00       99.00		
+ 
+      
+ ///////[ 26.3.2018 ]//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////     
+      
+  PRIZNAKY
+      SPEKTRALNI (16) + DYNAMICKE SPEKTRALNI (16)
+      
+     SPEAKER-DEPENDENT
+        - osoby:            (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+        - refeferecni sady: [0, 1, 2, 3]
+        - testovaci sady:   [4]
+
+
+
+    MULTI-SPEAKER
+        - osoby:            (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+        - refeferecni sady: [0, 1, 2, 3]
+        - testovaci sady:   [4]
+
+
+
+    SPEAKER INDEPENDENT
+        - refeferecni osoby: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
+        - refeferecni sady:  (0, 1, 2, 3, 4)
+        - testovaci osoby:   (20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+        - testovaci sady:    (0, 1, 2, 3, 4)
+        
+
+    vysledek: prumer testu na vsech osobach
+
+...................................Slova bez tichych useku................................................ 
+	
+  Uspesnost rozpoznani slova 
+
+  ASR                      LTW            DTW           HMM(8 stav. model) 
+
+ SPEAKER-DEPENDENT       85.333 %       87.333 %      93.333 %     
+
+ MULTI-SPEAKER           81.000 %       87.333 %      79.000 %     
+
+ SPEAKER-INDEPENDENT     56.800 %       58.000 %      71.200 %     
+
+
+
+
+
+ Doba rozpoznani slova 
+
+  ASR                      LTW            DTW           HMM (8 stav. model) 
+
+ SPEAKER-DEPENDENT       0.0042 s        0.0475 s       0.0268 s     
+
+ MULTI-SPEAKER           0.0473 s        1.2305 s       0.0282 s     
+
+ SPEAKER INDEPENDENT     0.0381 s        0.9817 s       0.0246 s     
+
+
+
+
+
+ Doba trenovani 
+
+  ASR                                                    HMM(8 stav. model)    
+
+ SPEAKER-DEPENDENT                                       2.010 s    
+
+ MULTI-SPEAKER                                           75.638 s    
+
+ SPEAKER-INDEPENDENT                                     42.749 s 
+      
+      </pre>
+    </div>
+  </body>
+</html>
