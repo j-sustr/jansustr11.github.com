@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <style>
+      body {
+        background-color: #1b1818; 
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+      .obsah {
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="obsah">
+      <pre class="script-preview">
+
+ ///////[ 31.5.2018 ]//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////     
+      
+    SPEAKER-DEPENDENT
+        - osoby:        (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+        - trenovaci sady: [0, 1, 2, 3]
+        - testovaci sady:   [4]
+
+
+
+    MULTI-SPEAKER
+        - osoby:          (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+        - trenovaci sady: [0, 1, 2, 3]
+        - testovaci sady:   [4]
+
+
+
+    SPEAKER-INDEPENDENT
+        - trenovaci osoby: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
+        - trenovaci sady:  (0, 1, 2, 3, 4)
+        - testovaci osoby:   (20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
+        - testovaci sady:    (0, 1, 2, 3, 4)
+
+  
+
+     FBANK16 (staticke, zkraceni nahravky na 1 s)
+    ----------------------------------------------------------------
+                              LTW            DTW            HMM(8 S.) 
+     SPEAKER-DEPENDENT       87.333 %       95.000 %       91.333 %     
+     MULTI-SPEAKER           87.333 %       -              66.333 %     
+     SPEAKER-INDEPENDENT     55.000 %       -              56.000 %     
+    
+        
+     MFCC12  (staticke: 12)
+    ------------------------------------------------------------------
+                              LTW            DTW             HMM(8 S.) 
+     SPEAKER-DEPENDENT       94.667 %       94.667 %        96.000 %     
+     MULTI-SPEAKER           95.000 %       96.333 %        91.333 %     
+     SPEAKER-INDEPENDENT     64.000 %       69.000 %        83.000 %      
+        
+        
+     MFCC24  (staticke: 12, dynamicke: 12)
+    ----------------------------------------------------------------
+                              LTW            DTW            HMM(8 S.) 
+     SPEAKER-DEPENDENT       91.667 %       94.333 %        96.333 %     
+     MULTI-SPEAKER           92.333 %       -               91.667 %     
+     SPEAKER-INDEPENDENT     58.000 %       -               82.000 %    
+      
+      </pre>
+    </div>
+  </body>
+</html>
