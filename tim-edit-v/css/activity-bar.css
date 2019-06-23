@@ -1,0 +1,20 @@
+#activity-bar {
+	background-color: rgb(24, 24, 24);
+}
+
+#activity-bar button {
+	border: none;
+	outline: none;
+    color: white;
+    font-weight: bold;
+	background-color: rgb(24, 24, 24);
+}
+
+#activity-bar button.selected {
+	background-color: rgb(41, 41, 41);
+	border-left: 2px solid rgb(146, 146, 146);
+}
+
+#activity-bar button:hover {
+	background-color: rgb(54, 54, 54);
+}

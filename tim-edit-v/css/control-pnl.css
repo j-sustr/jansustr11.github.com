@@ -1,0 +1,40 @@
+#control-pnl {
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    /* width: px; */
+    width: 100%;
+    height: 100%;
+}
+
+#control-pnl > * {
+    width: 100%;
+    height: 100%;
+}
+
+#control-pnl > * > * {
+    width: 240px;
+    margin: 4px 8px;
+}
+
+#control-pnl input[type=number] {
+    padding-left: 4px;
+}
+
+
+
+#files-tab {
+    
+    /* background-color: blueviolet */
+}
+
+#file-pickers {
+    z-index: 10;
+    display: grid;
+    /* display: block; */
+    margin: 30px;
+    padding: 5px;
+    width: 450px;
+    grid-template-rows: 40px 40px;
+    grid-template-columns: 150px 300px;
+    background-color: aquamarine
+}
